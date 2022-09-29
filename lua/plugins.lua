@@ -2,9 +2,9 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use { 'neoclide/coc.nvim', branch = 'release' }
-	use 'steelsojka/pears.nvim'
 	use 'navarasu/onedark.nvim'
 	use 'kyazdani42/nvim-web-devicons'
+    use 'iamcco/markdown-preview.nvim'
 	use {
 		'kyazdani42/nvim-tree.lua',
 		requires = {
@@ -16,4 +16,10 @@ return require('packer').startup(function(use)
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 end)

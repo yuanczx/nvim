@@ -1,19 +1,31 @@
 # Neovim 配置
 
-My personal neovim configuration
+- 我的Neovim配置
+- My personal neovim configuration
+
+## 环境 Environment
+
+- Windows11 22H2 
+- Windows Terminal + PowerShell
 
 ## 插件 Plugins
 
-|插件|描述|
-|---|---|
-|[packer.nvim](https://github.com/wbthomason/packer.nvim)|插件管理工具|
-|[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)|状态栏|
-|[onedark.nvim](https://github.com/navarasu/onedark.nvim)|OneDark主题|
-|[coc.nvim](https://github.com/neoclide/coc.nvim)|代码补全插件|
-|[rust-analyzer](https://github.com/rust-lang/rust-analyzer)|Rust代码分析插件|
-|[nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)|目录浏览|
+- [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [onedark.nvim](https://github.com/navarasu/onedark.nvim)
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- [coc.nvim](https://github.com/neoclide/coc.nvim)
+  - [coc-pairs](https://github.com/neoclide/coc-pairs)
+  - [coc-rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer)
+  - [rust-analyzer](https://github.com/rust-lang/rust-analyzer)
 
-## 快捷键
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+  - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+  - [Nerd Fonts](https://www.nerdfonts.com/)
+
+- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+
+## 快捷键 Hotkey
 
 |按键|功能|
 |---|---|
