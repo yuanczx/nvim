@@ -5,8 +5,14 @@
 
 ## 环境 Environment
 
-- Windows11 22H2 
+- Windows11 22H2
 - Windows Terminal + PowerShell
+
+## 使用提示 Tips
+
+- 请按照Packer.nvim的提示正确安装Packer
+- 部分插件需要使用`yarn`完成安装
+- 在Linux下可能需要额外配置
 
 ## 插件 Plugins
 
