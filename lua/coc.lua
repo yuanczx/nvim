@@ -5,7 +5,7 @@ function _G.check_back_space()
     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s')
 end
 
-local opts = {silen = true}
+local opts = {silent = true}
 
 keyset("n", "gd", "<Plug>(coc-definition)", opts)
 keyset("n", "gy", "<Plug>(coc-type-definition)", opts)
