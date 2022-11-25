@@ -8,3 +8,6 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.splitbelow = true
 vim.g.do_filetype_lua = 1
+-- 显示行号
+vim.wo.number = true
+vim.wo.rnu = true
