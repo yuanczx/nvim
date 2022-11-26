@@ -16,28 +16,29 @@
 
 ## 插件 Plugins
 
-- [packer.nvim](https://github.com/wbthomason/packer.nvim)
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [onedark.nvim](https://github.com/navarasu/onedark.nvim)
-- [Comment.nvim](https://github.com/numToStr/Comment.nvim)
-- [coc.nvim](https://github.com/neoclide/coc.nvim)
-  - [coc-pairs](https://github.com/neoclide/coc-pairs)
-  - [coc-rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer)
-  - [rust-analyzer](https://github.com/rust-lang/rust-analyzer)
+- [packer.nvim](https://github.com/wbthomason/packer.nvim) 插件管理工具
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) 状态栏
+- [onedark.nvim](https://github.com/navarasu/onedark.nvim) OneDark主题
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim) 快捷注释插件
+- [coc.nvim](https://github.com/neoclide/coc.nvim) LSP支持
+  - [coc-pairs](https://github.com/neoclide/coc-pairs) 符号补全
+  - [coc-rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) Rust支持
+  - [rust-analyzer](https://github.com/rust-lang/rust-analyzer) rust-analyzer
+  - [texlab](https://github.com/latex-lsp/texlab) LaTeX LSP支持
 
-- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-  - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-  - [Nerd Fonts](https://www.nerdfonts.com/)
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) 文件管理
+  - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) Icon显示
+  - [Nerd Fonts](https://www.nerdfonts.com/) Nerd字体字符图标
 
-- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) Markdown预览
 
-## 快捷键 Hotkey
+## 快捷键 KeyMap
 
 |按键|功能|
 |---|---|
 |\<space\>|\<leader\>|
-|\<leader\>t|:NvimTreeToggle|
+|\<leader\>r|运行|
+|\<leader\>t|:NvimTreeToggle 显示目录|
+|\<leader\>p|:MarkdownPreview Markdown预览|
 |:vs|左右分屏|
 |:sv|上下分屏|
-|:CocUpdate|COC插件更新|
-|:PackerSync|Packer插件同步|

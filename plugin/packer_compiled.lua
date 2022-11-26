@@ -95,11 +95,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
-  ["matlab-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\matlab-vim",
-    url = "https://github.com/MortenStabenau/matlab-vim"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
