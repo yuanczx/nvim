@@ -30,4 +30,8 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+    -- snippets
+    use {"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}
+
+    use {'ggandor/leap.nvim'}
 end)

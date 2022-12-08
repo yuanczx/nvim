@@ -1,19 +1,19 @@
 local keyset = vim.keymap.set
 
 vim.g.mapleader = ' '
-local opts = {silent = true}
+local opts = {silent = true,noremap = true}
 -- NvimTreeToggle
 keyset('', '<leader>t', ':NvimTreeToggle<Cr>', opts)
 
--- Markdown预览
-keyset('n', '<leader>p', ':MarkdownPreview<Cr>', opts)
-
+-- 预览
+keyset('n','H','0',opts)
+keyset('n','L','$',opts)
 local filetype = vim.fn.expand("%:e") -- 文件类型
 local filepath = vim.fn.expand("%:p") -- 文件路径
 local directory = vim.fn.expand("%:p:h") -- 文件所在目录
-local filename = vim.fn.expand("%:r") 
-filename = string.gsub(filename,".\\","") -- 文件名称
+local filename = vim.fn.expand("%:t") 
 
+-- filename = string.sub(filename,string.find(filename,'.',-4)) -- 文件名称无后缀
 -- 根据不同文件类型设置 <leader>r 所对应的命令
 local cmd -- 命令
 if filetype == 'java' then
@@ -25,13 +25,18 @@ elseif filetype == 'py' then
 elseif filetype == 'm' then
     -- matlab or octave
     cmd = ':sp<Cr>:te "C:\\Program Files\\MATLAB\\R2022b\\bin\\matlab.exe" -sd "'..directory..'" -nosplash -nodesktop -batch "'..filename..'"<Cr>"'
+elseif filetype == 'tex' then
+    cmd = [[:!pdflatex -aux-directory="]]..directory.."\\aux\""..[[ -output-directory="]]..directory.."\\output\""..[[ %<Cr>]]
+    keyset('n', '<leader>p', ':!'..directory..'\\output\\'..filename..'.pdf <Cr>', opts)
+elseif filetype == 'md' then
+    cmd = ' '
+    keyset('n', '<leader>p', ':MarkdownPreview<Cr>', opts)
 else
     -- unkonw
-    cmd = ''
-    print('unknow')
+    cmd = ' '
 end
 
-if cmd ~= '' then
+if cmd ~= ' ' then
     keyset('n', '<leader>r',cmd, opts)
 end
 -- vim.cmd([[
@@ -54,19 +59,4 @@ keyset("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
 -- Make <CR> to accept selected completion item or notify coc.nvim to format
 -- <C-g>u breaks current undo, please make your own choice.
 keyset("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], opts)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- keyset('i',"<esc>","<esc>:!%:p:h/fcitx-remote.exe -c<Cr>")

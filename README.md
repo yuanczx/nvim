@@ -31,6 +31,8 @@
   - [Nerd Fonts](https://www.nerdfonts.com/) Nerd字体字符图标
 
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) Markdown预览
+- [leap.nvim](https://github.com/ggandor/leap.nvim) 字符串搜索快速定位
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip) 代码片段
 
 ## 快捷键 KeyMap
 
