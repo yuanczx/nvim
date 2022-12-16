@@ -11,6 +11,7 @@
 ## 使用提示 Tips
 
 - 请按照Packer.nvim的提示正确安装Packer
+- coc.nvim 需要`nodejs`环境
 - 部分插件需要使用`yarn`完成安装
 - 在Linux下可能需要额外配置
 
