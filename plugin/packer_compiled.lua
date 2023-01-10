@@ -90,6 +90,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["leap.nvim"] = {
     loaded = true,
     path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\leap.nvim",

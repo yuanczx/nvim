@@ -6,6 +6,8 @@ return require('packer').startup(function(use)
 	use { 'neoclide/coc.nvim', branch = 'release' }
     -- Onedark 主题
 	use 'navarasu/onedark.nvim'
+    -- GitHub主题
+    use {'projekt0n/github-nvim-theme'}
     -- 图标
 	use 'kyazdani42/nvim-web-devicons'
     -- Markdown preview
