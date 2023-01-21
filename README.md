@@ -31,6 +31,8 @@
   - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) Icon显示
   - [Nerd Fonts](https://www.nerdfonts.com/) Nerd字体字符图标
 
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) 缓冲区
+
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) Markdown预览
 - [leap.nvim](https://github.com/ggandor/leap.nvim) 字符串搜索快速定位
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip) 代码片段
@@ -43,5 +45,8 @@
 |\<leader\>r|运行|
 |\<leader\>t|:NvimTreeToggle 显示目录|
 |\<leader\>p|:MarkdownPreview Markdown预览|
+|\<a-h\>|:bprevious|
+|\<a-l\>|:bnext|
+|\<c-q\>|:bp|bd # 关闭当前buffer|
 |:vs|左右分屏|
 |:sv|上下分屏|
