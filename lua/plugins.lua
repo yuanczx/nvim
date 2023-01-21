@@ -12,6 +12,8 @@ return require('packer').startup(function(use)
 	use 'kyazdani42/nvim-web-devicons'
     -- Markdown preview
     use 'iamcco/markdown-preview.nvim'
+    -- Bufferline
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     -- 文件浏览
 	use {
 		'kyazdani42/nvim-tree.lua',

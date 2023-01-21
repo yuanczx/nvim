@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "C:\\Users\\26905\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
