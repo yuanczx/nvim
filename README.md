@@ -26,6 +26,7 @@
   - [coc-rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) Rust支持
   - [rust-analyzer](https://github.com/rust-lang/rust-analyzer) rust-analyzer
   - [texlab](https://github.com/latex-lsp/texlab) LaTeX LSP支持
+  - [coc-snippets](https://github.com/neoclide/coc-snippets) COC snippets支持
 
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) 文件管理
   - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) Icon显示
@@ -45,6 +46,8 @@
 |\<leader\>r|运行|
 |\<leader\>t|:NvimTreeToggle 显示目录|
 |\<leader\>p|:MarkdownPreview Markdown预览|
+|\<leader\>d|打开PowerShell(Windows)|
+|\<leader\>f|格式化代码|
 |\<a-h\>|:bprevious|
 |\<a-l\>|:bnext|
 |\<c-q\>|:bp\|bd \# 关闭当前buffer|

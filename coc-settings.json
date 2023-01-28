@@ -1,6 +1,7 @@
 {
-	"rust-analyzer.server.path":"C:/Users/26905/AppData/Local/nvim/coc_plugins/rust-analyzer.exe",
+    "rust-analyzer.server.path": "C:/Users/26905/AppData/Local/nvim/coc_plugins/rust-analyzer.exe",
     "texlab.path": "C:/Users/26905/AppData/Local/nvim/coc_plugins/texlab.exe",
     "texlab.latexFormatter": "latexindent",
-    "snippets.ultisnips.pythonPrompt": false
+    "snippets.ultisnips.pythonPrompt": false,
+    "sumneko-lua.enableNvimLuaDev": true,
 }
