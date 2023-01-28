@@ -33,3 +33,11 @@ ls.add_snippets("java",{
         t({"}"})
     })
 })
+
+
+ls.add_snippets("c",{
+    s("main",{
+        t{"int main(){\n"},i(0),
+        t{'return 0;\n}'}
+    })
+})

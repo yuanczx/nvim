@@ -32,10 +32,10 @@ local opts = {silent = true, noremap = true, expr = true, replace_keycodes = fal
 -- <C-g>u breaks current undo, please make your own choice.
 keyset("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], opts)
 
-vim.cmd([[
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-]])
+-- vim.cmd([[
+-- inoremap <silent><expr> <TAB>
+--       \ coc#pum#visible() ? coc#pum#next(1) :
+--       \ CheckBackspace() ? "\<Tab>" :
+--       \ coc#refresh()
+-- inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+-- ]])

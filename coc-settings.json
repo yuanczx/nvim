@@ -1,5 +1,6 @@
 {
 	"rust-analyzer.server.path":"C:/Users/26905/AppData/Local/nvim/coc_plugins/rust-analyzer.exe",
     "texlab.path": "C:/Users/26905/AppData/Local/nvim/coc_plugins/texlab.exe",
-    "texlab.latexFormatter": "latexindent"
+    "texlab.latexFormatter": "latexindent",
+    "snippets.ultisnips.pythonPrompt": false
 }

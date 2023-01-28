@@ -12,8 +12,15 @@ return require('packer').startup(function(use)
 	use 'kyazdani42/nvim-web-devicons'
     -- Markdown preview
     use 'iamcco/markdown-preview.nvim'
+    -- Tokyonight theme
+    use 'folke/tokyonight.nvim'
     -- Bufferline
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    -- Treesitter 代码高亮
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
     -- 文件浏览
 	use {
 		'kyazdani42/nvim-tree.lua',

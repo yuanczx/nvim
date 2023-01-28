@@ -47,6 +47,6 @@
 |\<leader\>p|:MarkdownPreview Markdown预览|
 |\<a-h\>|:bprevious|
 |\<a-l\>|:bnext|
-|\<c-q\>|:bp|bd # 关闭当前buffer|
+|\<c-q\>|:bp\|bd \# 关闭当前buffer|
 |:vs|左右分屏|
 |:sv|上下分屏|
