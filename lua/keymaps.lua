@@ -22,8 +22,8 @@ vim.cmd[[:tnoremap jk <C-\><C-n>]]
 -- filename = string.sub(filename,string.find(filename,'.',-4)) -- 文件名称无后缀
 -- 根据不同文件类型设置 <leader>r 所对应的命令
 
-function run_file()
- 
+local function run_file()
+
     local filetype = vim.fn.expand("%:e") -- 文件类型
     local filepath = vim.fn.expand("%:p") -- 文件路径
     local directory = vim.fn.expand("%:p:h") -- 文件所在目录
@@ -66,7 +66,7 @@ function run_file()
 
 end
 
-function file_preview()
+local function file_preview()
     local filetype = vim.fn.expand("%:e") -- 文件类型
     local directory = vim.fn.expand("%:p:h") -- 文件所在目录
 

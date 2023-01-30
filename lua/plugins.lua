@@ -17,10 +17,7 @@ return require('packer').startup(function(use)
     -- Bufferline
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     -- Treesitter 代码高亮
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     -- 文件浏览
 	use {
 		'kyazdani42/nvim-tree.lua',
@@ -35,14 +32,9 @@ return require('packer').startup(function(use)
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
     -- 快捷注释插件
-    use {
-        'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    }
+    use {'numToStr/Comment.nvim'}
     -- snippets
     use {"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}
-
+    use {'lewis6991/gitsigns.nvim'}
     use {'ggandor/leap.nvim'}
 end)

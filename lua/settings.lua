@@ -1,4 +1,3 @@
-local filetype = vim.fn.expand("%:e") -- 文件类型
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
