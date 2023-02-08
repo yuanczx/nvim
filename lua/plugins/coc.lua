@@ -14,6 +14,7 @@ keyset("n", "gr", "<Plug>(coc-references)", opts)
 
 keyset("x", "<leader>f", "<Plug>(coc-format-selected)", opts)
 keyset("n", "<leader>f", "<Plug>(coc-format-selected)", opts)
+keyset("n","<leader>rn", "<Plug>(coc-rename)", opts)
 
 -- Auto complete
 function _G.check_back_space()
@@ -25,7 +26,7 @@ end
 -- no select by `"suggest.noselect": true` in your configuration file.
 -- NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 -- other plugin before putting this into your config.
-local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
+opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
 -- keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
 -- keyset("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
 -- Make <CR> to accept selected completion item or notify coc.nvim to format
