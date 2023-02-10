@@ -24,10 +24,10 @@ vim.cmd[[:tnoremap jk <C-\><C-n>]]
 
 local function run_file()
 
-    local filetype = vim.fn.expand("%:e") -- 文件类型
-    local filepath = vim.fn.expand("%:p") -- 文件路径
-    local directory = vim.fn.expand("%:p:h") -- 文件所在目录
-    local filename = vim.fn.expand("%:t")
+    local filetype = vim.bo.filetype -- 文件类型
+    local filepath = vim.fn.expandcmd("%:p") -- 文件路径
+    local directory = vim.fn.expandcmd("%:p:h") -- 文件所在目录
+    local filename = vim.fn.expandcmd("%:t")
 
     local cmd -- 命令
 
@@ -58,8 +58,8 @@ local function run_file()
         vim.cmd(cmd)
         vim.cmd('!'..directory..'/'..cpp_file)
     elseif filetype == 'tex' then
-        aux_directory = directory..'/auxil'
-        output_directory = directory..'/out'
+        local aux_directory = directory..'/auxil'
+        local output_directory = directory..'/out'
         cmd = '! xelatex -interaction=nonstopmode -aux-directory='..aux_directory..' -output-directory='..output_directory..' '..filepath
         vim.cmd(cmd)
     end
@@ -67,8 +67,8 @@ local function run_file()
 end
 
 local function file_preview()
-    local filetype = vim.fn.expand("%:e") -- 文件类型
-    local directory = vim.fn.expand("%:p:h") -- 文件所在目录
+    local filetype = vim.fn.expandcmd("%:e") -- 文件类型
+    local directory = vim.fn.expandcmd("%:p:h") -- 文件所在目录
 
     if filetype=='md' then
         vim.cmd('MarkdownPreview')
