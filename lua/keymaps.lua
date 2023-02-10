@@ -14,7 +14,15 @@ keyset('i', 'jk', '<esc>', opts)
 -- 预览
 keyset('n','H','0',opts)
 keyset('n','L','$',opts)
-keyset('n','<leader>d',':split term://pwsh<Cr>')
+
+if isWindows then
+    -- Use PowerShell
+    keyset('n','<leader>d',':split term://pwsh<Cr>')
+else
+    -- Use Bash
+    keyset('n','<leader>d',':split term://bash<Cr>')
+end
+
 vim.cmd[[:tnoremap <Esc> <C-\><C-n>]]
 vim.cmd[[:tnoremap jk <C-\><C-n>]]
 
