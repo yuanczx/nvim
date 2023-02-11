@@ -43,7 +43,7 @@ local function run_file()
         -- java
         cmd = '!javac '..filepath..'&& java '..filename
         vim.cmd(cmd)
-    elseif filetype == 'py' then
+    elseif filetype == 'python' then
         -- python
         cmd = '!python %'
         vim.cmd(cmd)

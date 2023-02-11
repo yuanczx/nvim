@@ -14,4 +14,4 @@ require("bufferline").setup{
 local keymap = vim.keymap
 keymap.set('n','<a-l>',':bnext<Cr>')
 keymap.set('n','<a-h>',':bprevious<Cr>')
-keymap.set('n','<a-w>',':bp|bd #<Cr>')
+keymap.set('n','<a-w>',':bp|bd! #<Cr>')
