@@ -86,6 +86,12 @@ local function file_preview()
 
 end
 
+local function stop_process()
+    vim.cmd('silent ! Stop-Process -name python')
+end
+
 keyset('n', '<leader>r',run_file, opts)
 keyset('n', '<leader>p',file_preview, opts)
+keyset('n', '<leader>s',stop_process, opts)
+
 

@@ -1,4 +1,5 @@
 require('settings')
+require('neovide')
 require('autocmd')
 require('plugins')
 require('keymaps')
